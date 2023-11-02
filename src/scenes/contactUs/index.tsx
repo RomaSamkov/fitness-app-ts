@@ -18,6 +18,7 @@ function ContactUs({ setSelectedPage }: Props) {
     formState: { errors },
   } = useForm();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (e: any) => {
     const isValid = await trigger();
     if (!isValid) {
